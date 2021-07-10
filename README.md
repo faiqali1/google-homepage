@@ -1,2 +1,3 @@
-# google-homepage
-First part of the odin-project
+# Google Home Page
+
+The first mini-project from the [Odin Project](https://www.theodinproject.com/).
