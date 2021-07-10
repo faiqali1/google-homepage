@@ -67,6 +67,7 @@
     }
     .bar-container{
         text-align: center;
+        padding: 20px;
     }
     #bar{
         border-color: #dcdcdc;
@@ -88,14 +89,23 @@
         position: relative;
         height: 20px;
         top: 5px;
-        left: 10px;
+        left: 5px;
     }
     .search{
         position: relative;
-        
+        color: #9AA0A6;
         top: 5px;
         right: 5px;
     }
+    .search-buttons{
+        background-color: #f8f9fa;
+        height: 36px;
+        min-width: 128px;
+        padding: 0px 16px;
+        margin: 11px 4px;
+        border: none;
+    }
+    
 
     </style>
 </head>
@@ -123,8 +133,8 @@
             <a href="#"> <img id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
         </div>
         <div class="button-container">
-            <button style="align-items: flex-start;">Google Search</button>
-            <button style="align-items: flex-end;">I'm Feeling Lucky</button>
+            <button class ="search-buttons" style="align-items: flex-start;">Google Search</button>
+            <button class ="search-buttons" style="align-items: flex-end;">I'm Feeling Lucky</button>
         </div>
     
     </div>
