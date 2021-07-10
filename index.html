@@ -1,35 +1,183 @@
 <!DOCTYPE html>
 <head>
     <title>Google Homepage</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    ul{
+        display: flex;
+        list-style-type: none;
+        }
+    .nav-list {
+        align-items: center;
+        flex-direction: row-reverse;
+        font-size: 13px;
+        margin: 5px;
+        padding: 10px;
+        justify-items: center;
+        }
+    li{
+        float: right;
+    }
+
+    li a{
+        display: block;
+        text-decoration: none;
+        padding: 8px 16px;
+        text-align: center;
+    }        
+
+    li a:hover {
+        text-decoration: underline;
+    }
+    .apps-button:hover{
+        background-color: #F0F0F0;
+        border-radius: 100%;
+    }
+    .sign-in{
+        font-size: 13px;
+        display: block;
+        font-weight: 700 ;
+        /* data copied from inspect element*/
+        color: white;
+        background-image: -webkit-linear-gradient(top, rgb(67, 135, 253), rgb(70, 131, 234));
+        border: 1px solid #4285f4;
+        border-top-color: rgb(66, 133, 244);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(66, 133, 244);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(66, 133, 244);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(66, 133, 244);
+        border-left-style: solid;
+        border-left-width: 1px;
+        height: 30px;
+        width: 69.64px;        
+    }
+    a{
+        color: #000;
+    }
+    .google-image{
+        padding-top: 109px;
+        text-align: center;
+    }
+    .bar-container{
+        text-align: center;
+        padding: 20px;
+    }
+    #bar{
+        border-color: #dcdcdc;
+        font-size: 16px;
+        height: 34px;
+        width: 487px;
+        outline: none;
+        border: none;
+        margin-top: 5px; 
+    }
+    .search-bar{
+        margin: 0 auto;
+        width: 582px;
+        height: 44px;
+        border: 1px solid #dcdcdc;
+        border-radius: 30px;
+    }
+    #voice{
+        position: relative;
+        height: 20px;
+        top: 5px;
+        left: 5px;
+    }
+    .search{
+        position: relative;
+        color: #9AA0A6;
+        top: 5px;
+        right: 5px;
+    }
+    .button-container{
+        padding-top: 10px;
+    }
+    .search-buttons{
+        background-color: #f8f9fa;
+        height: 36px;
+        min-width: 128px;
+        padding: 0px 16px;
+        margin: 11px 4px;
+        border: none;
+    }
+
+    .footer-right{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        float: right;
+        padding-left: 0%; 
+    }
+
+    
+    .footer-left{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        padding-left: 0%;
+    }
+    footer{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(112, 117, 122);
+        position: fixed;
+        left: 0px;
+        bottom: 0%;
+        width: 100%;
+        align-self: baseline;
+        background-color : #F2F2F2;
+    }
+    </style>
 </head>
 <body>
+    <nav>
     <div class="nav-bar">
-        <nav>
-            <ul>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>Icon</li>
-                <li>pictu</li>
+            <ul class= nav-list>
+                <div class="text-nav"></div>
+                <li><Button class="sign-in">Sign in</Button></li>
+                <li class="apps-button" ><a href="#"> <img src="assets/apps_black_24dp.svg" alt="apps"></a></li>
+                <li ><a href="#">Images</a></li>
+                <li ><a href="#">Gmail</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
         
-    <div class="google image">
+    <div class="google-image">
         <img src = https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png></img>
+        
     </div>
-
-    <div class="search-bar">
-        <!---
-            search bar  
-        -->
-    </div>
-
-<div class="languages">
-
-</div>
-
-<footer>
+    <div class="bar-container">
+        <div class="search-bar">
+            <img class="search"  src="assets/search_black_24dp.svg" alt="search" >
+            <input type="text" name="" id="bar">
+            <a href="#"> <img id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+        </div>
+        <div class="button-container">
+            <button class ="search-buttons" style="align-items: flex-start;">Google Search</button>
+            <button class ="search-buttons" style="align-items: flex-end;">I'm Feeling Lucky</button>
+        </div>
     
+    </div>
+    
+<footer>
+    <ul class="footer-right">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+    <ul class="footer-left">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+    </ul>
 </footer>
 
 </body>
