@@ -6,11 +6,14 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     ul {
-        font-size: 13px;
-        list-style-type: none;
-        margin: 5px;
-        padding: 10px;
-        justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 13px;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    justify-items: center;
         }
     li{
         float: right;
@@ -27,10 +30,19 @@
     li a:hover {
         text-decoration: underline;
     }
+    .apps-button:hover{
+        background-color: #F0F0F0;
+        border-radius: 100%;
+    }
+    .sign-in{
+        font-size: 16px;
+        height: 30px;
+        width: 60px;
+        background-color: blue;
+    }
     a{
         color: #000;
     }
-
     .google-image{
     padding-top: 109px;
     text-align: center;
@@ -40,16 +52,17 @@
     </style>
 </head>
 <body>
+    <nav>
     <div class="nav-bar">
-        <nav>
             <ul>
-                <li ><a href="#">profile picture </a></li>
-                <li ><a href="#"> <img src="assets/apps_black_24dp.svg" alt="apps"> </a></li>
+                <div class="text-nav"></div>
+                <li class="sign-in"><a href="#">Sign in</a></li>
+                <li class="apps-button" ><a href="#"> <img src="assets/apps_black_24dp.svg" alt="apps"> </a></li>
                 <li ><a href="#">Images</a></li>
                 <li ><a href="#">Gmail</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
         
     <div class="google-image">
         <img src = https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png></img>
