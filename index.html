@@ -65,7 +65,37 @@
     padding-top: 109px;
     text-align: center;
     }
-
+    .bar-container{
+        text-align: center;
+    }
+    #bar{
+        border-color: #dcdcdc;
+        font-size: 16px;
+        height: 34px;
+        width: 487px;
+        outline: none;
+        border: none;
+        margin-top: 5px; 
+    }
+    .search-bar{
+        margin: 0 auto;
+        width: 582px;
+        height: 44px;
+        border: 1px solid #dcdcdc;
+        border-radius: 30px;
+    }
+    #voice{
+        position: relative;
+        height: 20px;
+        top: 5px;
+        left: 10px;
+    }
+    .search{
+        position: relative;
+        
+        top: 5px;
+        right: 5px;
+    }
 
     </style>
 </head>
@@ -75,7 +105,7 @@
             <ul>
                 <div class="text-nav"></div>
                 <li><Button class="sign-in">Sign in</Button></li>
-                <li class="apps-button" ><a href="#"> <img src="assets/apps_black_24dp.svg" alt="apps"> </a></li>
+                <li class="apps-button" ><a href="#"> <img src="assets/apps_black_24dp.svg" alt="apps"></a></li>
                 <li ><a href="#">Images</a></li>
                 <li ><a href="#">Gmail</a></li>
             </ul>
@@ -88,7 +118,9 @@
     </div>
     <div class="bar-container">
         <div class="search-bar">
-            hhhh
+            <img class="search"  src="assets/search_black_24dp.svg" alt="search" >
+            <input type="text" name="" id="bar">
+            <a href="#"> <img id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
         </div>
         <div class="button-container">
             <button style="align-items: flex-start;">Google Search</button>
@@ -102,6 +134,18 @@
 </div>
 
 <footer>
+    <ul class="footer-right">
+        <li><a href="#"></a>Privacy</li>
+        <li><a href="#"></a>Terms</li>
+        <li><a href="#"></a>Settings</li>
+    </ul>
+
+    <ul class="footer-left">
+        <li><a href="#"></a>Advertising</li>
+        <li><a href="#"></a>Business</li>
+        <li><a href="#"></a>How Search Works</li>
+    </ul>
+    
     
 </footer>
 
